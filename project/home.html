@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>SVESTON WATCHES</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header class="header">
+        <div class="top-bar">
+            <p><marquee direction="right">Your Satisfaction, Guaranteed: <br> 30-Day Easy Returns & Refunds</marquee></p>
+        </div>
+        <nav class="nav">
+            <div class="logo">
+                <img src="Svesve logo.jpg.png" alt="logo" width="100px">
+            </div>
+            <ul class="menu">
+                <li><a href="#" onclick="showPage('home')">Home</a></li>
+                <li><a href="#" onclick="showPage('about')">About Us</a></li>
+                <li><a href="#" onclick="showPage('contact')">Contact</a></li>
+                <li><a href="#" onclick="showPage('menu')">Shop</a></li>
+            </ul>
+            <div class="cart">
+                <a href="#" onclick="viewCart()">
+                    <img src="Capture.PNG">
+                    <span id="cart-count"></span>
+                </a>
+            </div>
+        </nav>
+    </header>
+
+    <main id="content">
+        <section id="home" class="page">
+            <div class="hero">
+                <div class="hero-content">
+                    <h2>EVERY SECOND COUNTS:<br> Style That Never Misses a Second</h2>
+                    <p>Discover The Perfect Watch<br>Click Now To order!</p>
+                    <button class="btn" onclick="showPage('menu')">Order Now</button>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="page">
+            <div class="about-hero">
+                <h1>About Us</h1>
+            </div>
+            <div class="about-content">
+                <div class="about-section">
+                    <div class="about-item">
+                        <img src="mission.jpg" alt="Mission">
+                    </div>
+                    <div class="about-item">
+                        <h2>MISSION</h2>
+                        <p>"TO DELIVER TIMEPIECES THAT ARE MATCHLESS IN STYLE, DURABILITY AND AFFORDABILITY."</p>
+                        <button class="btn" onclick="showPage('contact')">Contact Us</button>
+                    </div>
+                </div>
+                <div class="about-section reverse">
+                    <div class="about-item">
+                        <h2>OUR STORY</h2>
+                        <p>We at Sveston, successfully disrupted the overpriced fashion industry. With over 4 decades of experience in watch-making & supply chain, we are able to provide timepieces possessing style and durability at radically fair prices. From dapper look to the rough and tough sporty attire, to party wear, to casual outfit, you can get ideal timepieces for yourself and your better half.</p>
+                        <button class="btn" onclick="showPage('contact')">Contact Us</button>
+                    </div>
+                    <div class="about-item">
+                        <img src="story.jpg" alt="Story">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="menu" class="page">
+            <div class="menu-hero">
+                <h1>Our Collection</h1>
+            </div>
+            <div class="menu-content">
+                <h2 class="collection-title">Men's Collection</h2>
+                <div class="menu-grid">
+                    <div class="menu-item">
+                        <img src="orlendo.jpg" alt="Orlendo">
+                        <h3>Orlendo SV-7532-M</h3>
+                        <p>Rs 9,500</p>
+                        <button onclick="addItem('Orlendo SV-7532-M', 9500)">ADD TO CART</button>
+                    </div>
+                    <div class="menu-item">
+                        <img src="Dragon.jpg" alt="Dragon">
+                        <h3>Dragon SV-9348-M</h3>
+                        <p>Rs 3,300</p>
+                        <button onclick="addItem('Dragon SV-9348-M', 3300)">ADD TO CART</button>
+                    </div>
+                    <div class="menu-item">
+                        <img src="Modicci.jpg" alt="Modicci">
+                        <h3>MODICCI</h3>
+                        <p>Rs 5,420</p>
+                        <button onclick="addItem('MODICCI', 5420)">ADD TO CART</button>
+                    </div>
+                    <div class="menu-item">
+                        <img src="visaal.webp" alt="Visaal">
+                        <h3>Visaal SV-7482-M</h3>
+                        <p>Rs 4,200</p>
+                        <button onclick="addItem('Visaal SV-7482-M', 4200)">ADD TO CART</button>
+                    </div>
+                    <div class="menu-item">
+                        <img src="force.jpg" alt="Force">
+                        <h3>Force SV-9355-M</h3>
+                        <p>Rs 4,190</p>
+                        <button onclick="addItem('Force SV-9355-M', 4190)">ADD TO CART</button>
+                    </div>
+                    <div class="menu-item">
+                        <img src="johnwick.jpg" alt="John Wick">
+                        <h3>John Wick SV-7475-Formal</h3>
+                        <p>Rs 9,087</p>
+                        <button onclick="addItem('John Wick SV-7475-Formal', 9087)">ADD TO CART</button>
+                    </div>
+                    <div class="menu-item">
+                        <img src="drift.jpg" alt="Drift">
+                        <h3>Drift SV-9791-M</h3>
+                        <p>Rs 2,250</p>
+                        <button onclick="addItem('Drift SV-9791-M', 2250)">ADD TO CART</button>
+                    </div>
+                    <div class="menu-item">
+                        <img src="captaincook.jpg" alt="Captain Cook">
+                        <h3>Captain Cook SV-7521-M</h3>
+                        <p>Rs 6,065</p>
+                        <button onclick="addItem('Captain Cook SV-7521-M', 6065)">ADD TO CART</button>
+                    </div>
+                </div>
+
+                <h2 class="collection-title">Women's Collection</h2>
+                <div class="menu-grid">
+                    <div class="menu-item">
+                        <img src="sephoni.jpg" alt="Sephoni">
+                        <h3>SV-SEPHONI-F</h3>
+                        <p>Rs 9,999</p>
+                        <button onclick="addItem('SV-SEPHONI-F', 9999)">ADD TO CART</button>
+                    </div>
+                    <div class="menu-item">
+                        <img src="classy.jpg" alt="Classy">
+                        <h3>Classy 1.0 SV-6332-F</h3>
+                        <p>Rs 7,999</p>
+                        <button onclick="addItem('Classy 1.0 SV-6332-F', 7999)">ADD TO CART</button>
+                    </div>
+                    <div class="menu-item">
+                        <img src="elysian.jpg" alt="Elysian">
+                        <h3>Elysian SV-6319-F</h3>
+                        <p>Rs 6,500</p>
+                        <button onclick="addItem('Elysian SV-6319-F', 6500)">ADD TO CART</button>
+                    </div>
+                    <div class="menu-item">
+                        <img src="hope.jpg" alt="Hope">
+                        <h3>HOPE SV-19023-F</h3>
+                        <p>Rs 11,200</p>
+                        <button onclick="addItem('HOPE SV-19023-F', 11200)">ADD TO CART</button>
+                    </div>
+                </div>
+
+                <h2 class="collection-title">Custom Watches</h2>
+                <div class="menu-grid">
+                    <div class="menu-item">
+                        <img src="valentine.jpg" alt="Valentine">
+                        <h3>Valentine SV-7505-M</h3>
+                        <p>Rs 25,700</p>
+                        <button onclick="addItem('Valentine SV-7505-M', 25700)">ADD TO CART</button>
+                    </div>
+                    <div class="menu-item">
+                        <img src="ranger.jpg" alt="Ranger">
+                        <h3>Ranger SV-9362-M</h3>
+                        <p>Rs 19,350</p>
+                        <button onclick="addItem('Ranger SV-9362-M', 19350)">ADD TO CART</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="page">
+            <div class="contact-hero">
+                <h1>Contact Us</h1>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-card">
+                        <span class="icon">📍</span>
+                        <h3>Address</h3>
+                        <p>Saima Square one Mall, National Stadium Rd, Karachi</p>
+                    </div>
+                    <div class="contact-card">
+                        <span class="icon">📞</span>
+                        <h3>Call Us</h3>
+                        <p>+922138282828</p>
+                    </div>
+                    <div class="contact-card">
+                        <span class="icon">📧</span>
+                        <h3>Email</h3>
+                        <p>info@svestonwatches.com</p>
+                    </div>
+                </div>
+                
+                <div class="contact-form">
+                    <h2>Send Message</h2>
+                    <form onsubmit="return submitForm()">
+                        <input type="text" id="name" placeholder="Your Name" required>
+                        <input type="email" id="email" placeholder="Your Email" required>
+                        <textarea id="message" placeholder="Your Message" rows="5" required></textarea>
+                        <button type="submit" class="btn">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 SVESTON WATCHES</p>
+    </footer>
+</body>
+</html>
